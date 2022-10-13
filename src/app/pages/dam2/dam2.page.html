@@ -1,0 +1,11 @@
+<app-cabecera titulo="DAM 2"></app-cabecera>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let e of modulos" >
+      <ion-avatar><img [src]="e.icono"></ion-avatar>
+      <ion-label>{{e.nombre}}</ion-label>
+      <ion-checkbox [color]="e.clase" [(ngModel)]="e.chequear"> </ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

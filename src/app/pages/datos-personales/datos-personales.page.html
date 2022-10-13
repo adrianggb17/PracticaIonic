@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Datos Personales</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="inicio"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="Nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Localidad</ion-label>
+    <ion-input [(ngModel)]="Localidad"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Estudios que estas cursando</ion-label>
+    <ion-input [(ngModel)]="Estudios"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input [(ngModel)]="Email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input [(ngModel)]="Contrasena"></ion-input>
+  </ion-item>
+  <ion-button fill="solid" (click)="submit()">Enviar</ion-button>
+</ion-content>
