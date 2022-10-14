@@ -14,7 +14,9 @@ export class DAM2Page implements OnInit {
 
   ngOnInit() {
   }
-
+  checked:boolean;
+  
+  
   modulos=[
     {
       nombre:"Procesos y Servicios",
@@ -53,4 +55,6 @@ export class DAM2Page implements OnInit {
       chequear:true
     }
   ]
+
+  
 }
